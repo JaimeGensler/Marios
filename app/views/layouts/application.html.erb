@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>MariosNew</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
+<body>
+    <header>
+        <h1><%= link_to 'Mario\'s', '/' %></h1>
+    </header>
 
-  <body>
-    <%= yield %>
-  </body>
+    <% unless (flash[:alert].nil? && flash[:notice].nil?) %>
+        <div id='flash'>
+            <p class='alert'><%= flash[:alert] %></p>
+            <p class='notice'><%= flash[:notice] %></p>
+        </div>
+    <% end %>
+    
+    <main>
+        <%= yield %>
+    </main>
+</body>
 </html>
