@@ -1,5 +1,21 @@
 <h2><%= @product.name %></h2>
 
+<% if @product.reviews.any? %>
+    <h4>Product Reviews:</h4>
+
+    <% @product.reviews.each do |review| %>
+    <ul>
+        <li>
+            <%= link_to review.name, product_review_path(@product, review) %>
+        </li>
+    </ul>
+<% end %>
+<% else %>
+    <p>There are no reviews for this product yet!</p>
+<% end %>
+
+<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
+
 <p><%= link_to 'Edit', edit_product_path(@product) %></p>
 <p><%= link_to 'Delete', product_path(@product),
         data: {
