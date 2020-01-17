@@ -6,7 +6,7 @@
     <% @product.reviews.each do |review| %>
     <ul>
         <li>
-            <%= link_to review.name, product_review_path(@product, review) %>
+            <%= link_to review.content_body, product_review_path(@product, review) %>
         </li>
     </ul>
 <% end %>
