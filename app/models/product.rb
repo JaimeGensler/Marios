@@ -17,4 +17,11 @@ class Product < ApplicationRecord
         .take(1)
         .first
     )}
+
+    before_save(:titleize_product)
+    
+    private
+    def titleize_product
+        self.name = self.name.titleize
+    end
 end
