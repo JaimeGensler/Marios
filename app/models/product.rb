@@ -17,9 +17,10 @@ class Product < ApplicationRecord
         .take(1)
         .first
     )}
+    scope :random, -> { offset(rand(Product.count)).first }
 
     before_save(:titleize_product)
-    
+
     private
     def titleize_product
         self.name = self.name.titleize
