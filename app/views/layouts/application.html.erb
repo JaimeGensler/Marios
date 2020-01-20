@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MariosNew</title>
+    <title>Mario's</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-    <header>
-        <h1><%= link_to 'Mario\'s', '/' %></h1>
+    <header id='site-header'>
+        <a href='/' id='title'>
+            <%= image_tag 'm.png', alt: 'M' %>
+            <h1>Mario's Specialty Foods</h1>
+        </a>
+        <nav>
+            <%= link_to 'View Products', products_path %>
+        </nav>
     </header>
 
     <% unless (flash[:alert].nil? && flash[:notice].nil?) %>
-        <div id='flash'>
-            <p class='alert'><%= flash[:alert] %></p>
-            <p class='notice'><%= flash[:notice] %></p>
-        </div>
+    <div id='flash'>
+        <p class='alert'><%= flash[:alert] %></p>
+        <p class='notice'><%= flash[:notice] %></p>
+    </div>
     <% end %>
 
     <main>
