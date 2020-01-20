@@ -83,6 +83,10 @@ p {
     font-size: 1rem;
     font-weight: bold;
     border-bottom: 1px solid black;
+
+    opacity: 0;
+    margin-top: -1.5rem;
+    animation: 3s fadeOut linear 1;
 }
 #flash p {
     height: 100%;
@@ -90,11 +94,34 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: 500ms fadeIn linear 1;
 }
 #notice {
     background-color: #ceedd6;
 }
 #alert {
     background-color: #ffdbd9;
+}
+@keyframes fadeIn {
+    from { color: transparent; }
+    to { color: black; }
+}
+@keyframes fadeOut {
+    0% {
+        margin-top: 0;
+        opacity: 1;
+    }
+    90% {
+        margin-top: 0;
+        opacity: 1;
+    }
+    95% {
+        margin-top: 0;
+        opacity: 0;
+    }
+    100% {
+        margin-top: -1.5rem;
+        opacity: 0;
+    }
 }
 /* END */

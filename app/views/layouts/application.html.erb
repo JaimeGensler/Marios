@@ -18,8 +18,6 @@
         </nav>
     </header>
 
-    <% flash[:alert] = 'Hell yeah, brother' %>
-
     <% unless (flash[:notice].nil? && flash[:alert].nil?) %>
     <div id='flash'>
         <% unless flash[:notice].nil? %>
