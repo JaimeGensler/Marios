@@ -10,7 +10,9 @@
 <body>
     <header id='site-header'>
         <a href='/' id='title'>
-            <%= image_tag 'm.png', alt: 'M' %>
+            <div id='test'>
+                <%= image_tag 'm.png', alt: 'M' %>
+            </div>
             <h1>Mario's Specialty Foods</h1>
         </a>
         <nav>
@@ -21,10 +23,10 @@
     <% unless (flash[:notice].nil? && flash[:alert].nil?) %>
     <div id='flash'>
         <% unless flash[:notice].nil? %>
-            <p id='notice'><%= flash[:notice] %></p>
+        <p id='notice'><%= flash[:notice] %></p>
         <% end %>
         <% unless flash[:alert].nil? %>
-            <p id='alert'><%= flash[:alert] %></p>
+        <p id='alert'><%= flash[:alert] %></p>
         <% end %>
     </div>
     <% end %>
