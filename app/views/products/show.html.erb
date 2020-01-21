@@ -1,4 +1,6 @@
-<h2><%= @product.name %></h2>
+<div class='container'>
+
+<h2 class='red-white'>Product: <%= @product.name %></h2>
 
 <% if @product.reviews.any? %>
     <h4>Product Reviews:</h4>
@@ -13,17 +15,20 @@
 <% else %>
     <p>There are no reviews for this product yet!</p>
 <% end %>
+<p><%= link_to "Add a review", new_product_review_path(@product), class: 'new' %></p>
 
-<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
 
-<p><%= link_to 'Edit', edit_product_path(@product) %></p>
-<p>
-    <%= link_to 'Delete', product_path(@product),
-        data: {
-            confirm: "Are you certain you want to delete product '#{@product.name}'?",
-            method: 'delete'
-        }
-    %>
-</p>
+<div class='edit-delete'>
+    <p class='edit'><%= link_to 'Edit Product', edit_product_path(@product) %></p>
+    <p class='delete'>
+        <%= link_to 'Delete Product', product_path(@product),
+            data: {
+                confirm: "Are you certain you want to delete product '#{@product.name}'?",
+                method: 'delete'
+            }
+        %>
+    </p>
+</div>
 
 <p><%= link_to 'Return to list of products', products_path %></p>
+</div>

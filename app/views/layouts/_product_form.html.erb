@@ -1,11 +1,18 @@
 <%= render "layouts/errors", :object => @product %>
 
-<%= form_for @product do |f| %>
-    <%= f.label :name, 'Product Name' %>
-    <%= f.text_field :name %>
-    <%= f.label :cost %>
-    <%= f.text_field :cost %>
-    <%= f.label :country_of_origin %>
-    <%= f.text_field :country_of_origin %>
+<%= form_for @product, html: {class: 'container'} do |f| %>
+    <h2 class='red-white'><%= "#{form_text} Product"%></h2>
+    <div>
+        <%= f.label :name, 'Product Name: ' %>
+        <%= f.text_field :name %>
+    </div>
+    <div>
+        <%= f.label :cost, 'Price: ' %>
+        <%= f.text_field :cost %>
+    </div>
+    <div>
+        <%= f.label :country_of_origin, 'Country of Origin: ' %>
+        <%= f.text_field :country_of_origin %>
+    </div>
     <%= f.submit %>
 <% end %>

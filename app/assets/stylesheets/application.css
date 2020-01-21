@@ -142,19 +142,14 @@ p {
 /* END */
 
 
+
 /* MAIN */
 main {
     width: 75%;
     height: 100%;
     margin: 1rem auto;
 }
-#about {
-    border-radius: 5rem;
-    border: 3px solid black;
-    padding: 2rem;
-    margin-bottom: 2.5rem;
-}
-#about h2 {
+.red-white {
     font-size: 1.5rem;
     background-color: rgb(240, 00, 50);
     color: white;
@@ -163,6 +158,23 @@ main {
     border-radius: 2rem;
     display: inline-block;
     margin-bottom: 1rem;
+}
+.container {
+    padding: 2rem;
+    border-radius: 5rem;
+    border: 3px solid black;
+}
+.new {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: dimgrey;
+}
+.new:hover {
+    color: black;
+}
+
+#about {
+    margin-bottom: 2.5rem;
 }
 #about p {
     font-size: 1rem;
@@ -185,6 +197,7 @@ main {
 }
 .card h2 {
     margin-bottom: 1rem;
+    color: rgb(240, 00, 50);
 }
 .item {
     width: 75%;
@@ -199,5 +212,55 @@ main {
 .item p {
     font-style: italic;
     text-align: center;
+}
+
+#list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+form label {
+    font-size: 2rem;
+}
+form div {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 1px solid gray;
+}
+.edit-delete {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+}
+.edit {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 200, 0, 0.5);
+    text-align: center;
+}
+.delete {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 50, 0, 0.5);
+    text-align: center;
+}
+.edit a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.delete a {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
 }
 /* END */
