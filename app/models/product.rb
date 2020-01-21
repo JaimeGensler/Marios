@@ -8,9 +8,10 @@ class Product < ApplicationRecord
     scope :most_recent, -> { order(created_at: :desc).limit(3) }
     scope :by_country, -> (country_name_parameter) {
         where('country_of_origin ilike ?', "%#{country_name_parameter}%")
+        .limit(3)
     }
-    scope :most_tasks, -> {(
-        select('products.id, COUNT(review.id) AS review_count')
+    scope :most_reviews, -> {(
+        select('products.id, products.name, products.cost, products.country_of_origin, COUNT(reviews.id) AS review_count')
         .joins(:reviews)
         .group('products.id')
         .order('review_count DESC')

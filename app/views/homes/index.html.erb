@@ -2,3 +2,34 @@
     <h2>About Mario's</h2>
     <p><%= @blurb %></p>
 </div>
+
+<div id='cards'>
+    <div class='card'>
+        <h2>Recently Added!</h2>
+        <% @recents.each do |product| %>
+            <div class='item'>
+                <h3><%= product.name %></h3>
+                <p>Price: $<%= product.cost %></p>
+                <p>From: <%= product.country_of_origin %></p>
+            </div>
+        <% end %>
+    </div>
+    <div class='card'>
+        <h2>Most Reviewed!</h2>
+        <div class='item'>
+            <h3><%= @top.name %></h3>
+            <p>Price: $<%= @top.cost %></p>
+            <p>From: <%= @top.country_of_origin %></p>
+        </div>
+    </div>
+    <div class='card'>
+        <h2>Made in USA</h2>
+        <% @usa.each do |product| %>
+            <div class='item'>
+                <h3><%= product.name %></h3>
+                <p>Price: $<%= product.cost %></p>
+                <p>From: <%= product.country_of_origin %></p>
+            </div>
+        <% end %>
+    </div>
+</div>
