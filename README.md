@@ -1,24 +1,47 @@
-# README
+# Mario's Specialty Foods
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _A website to display food products and reviews! - Jan. 20, 2020_
 
-Things you may want to cover:
+#### By _Jaime Gensler_
 
-* Ruby version
 
-* System dependencies
+## Description
+_Mario's Specialty Foods allows the user to create new food products and reviews for those products. Both products and reviews have full CRUD functionality._
 
-* Configuration
+| SPEC                           | EXAMPLE INPUT               | EXAMPLE OUTPUT             |
+|--------------------------------|-----------------------------|----------------------------|
+| Users can create products      | New Product => 'kimchi'     | kimchi, from Japan, $3.50  |
+| Users can update products      | 'kimchi' => 'KimChi'        | KimChi, from Japan, $3.50  |
+| Users can delete products      | Delete 'KimChi'             | KimChi and reviews deleted |
+| Same functionality for reviews | 'Kimchi is good, 4/5 stars' | KimChi, avg. 4/5 stars     |
 
-* Database creation
+## Setup/Installation Requirements
 
-* Database initialization
+* _Clone this github repository_
+* _CD into the repository_
+* _Run 'gem install bundler'_
+* _Run 'bundle'_
+* _Run 'rake db:create'_
+* _Run 'rake db:migrate'_
+* _Run 'rake db:seed'_
+* _Run 'rails s'_
+* _Enjoy!_
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+_For questions, comments, complaints, or confessions, please reach out to me at: <jaimegensler0@gmail.com>_
 
-* ...
+
+## Technologies Used
+
+* _Ruby_
+* _Rails_
+* _rspec_
+
+
+### License
+
+This software is licensed under the MIT License.
+
+Copyright (c) 2019 **_Jaime Gensler_**
