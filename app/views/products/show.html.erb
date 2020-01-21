@@ -3,15 +3,14 @@
 <h2 class='red-white'>Product: <%= @product.name %></h2>
 
 <% if @product.reviews.any? %>
-    <h4>Product Reviews:</h4>
-
+<h4>Product Reviews:</h4>
+<ul class='reviews'>
     <% @product.reviews.each do |review| %>
-    <ul>
         <li>
             <%= link_to review.content_body, product_review_path(@product, review) %>
         </li>
-    </ul>
 <% end %>
+</ul>
 <% else %>
     <p>There are no reviews for this product yet!</p>
 <% end %>
@@ -21,7 +20,8 @@
 <div class='edit-delete'>
     <p class='edit'><%= link_to 'Edit Product', edit_product_path(@product) %></p>
     <p class='delete'>
-        <%= link_to 'Delete Product', product_path(@product),
+        <%=
+            link_to 'Delete Product', product_path(@product),
             data: {
                 confirm: "Are you certain you want to delete product '#{@product.name}'?",
                 method: 'delete'

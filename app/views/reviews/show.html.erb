@@ -1,16 +1,20 @@
-<h1>Product: <%= @product.name %></h1>
-<hr>
-<h2>Reviewer: <%= @review.author %></h2>
-<h3><%= @review.content_body %></h3>
+<div class='container'>
+    <h2 class='red-white'>Review for: <%= @product.name %></h2>
+    <h3><%= @review.author %> says:</h3>
+    <blockquote><%= @review.content_body %></blockquote>
+    <h3 id='rating'><%= '🌟' * @review.rating %> (<%= @review.rating %> / 5 stars)</h3>
 
-<p><%= link_to 'Edit review', edit_product_review_path(@product, @review) %></p>
-<p>
-    <%= link_to 'Delete review', product_review_path(@product, @review),
-        data: {
-            confirm: "Are you certain you want to delete review by '#{@review.author}'?",
-            method: 'delete'
-        }
-    %>
-</p>
-
-<p><%= link_to 'Return to product page', product_path(@product) %></p>
+    <div class='edit-delete'>
+        <p class='edit'><%= link_to 'Edit review', edit_product_review_path(@product, @review) %></p>
+        <p class='delete'>
+            <%=
+                link_to 'Delete review', product_review_path(@product, @review),
+                data: {
+                    confirm: "Are you certain you want to delete review by '#{@review.author}'?",
+                    method: 'delete'
+                }
+            %>
+        </p>
+    </div>
+    <p><%= link_to 'Return to product page', product_path(@product) %></p>
+</div>

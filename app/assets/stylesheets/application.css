@@ -249,7 +249,7 @@ form div {
     width: 100%;
     height: 100%;
     display: block;
-    
+
     color: black;
     font-size: 1.25rem;
     text-decoration: none;
@@ -262,5 +262,19 @@ form div {
     color: black;
     font-size: 1.25rem;
     text-decoration: none;
+}
+
+.reviews {
+    font-size: 1.1rem;
+}
+.reviews li {
+    margin-bottom: 1rem;
+}
+.reviews a {
+    text-decoration: none;
+}
+#rating {
+    display: block;
+    text-align: center;
 }
 /* END */
