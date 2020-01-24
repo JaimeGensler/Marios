@@ -5,7 +5,7 @@
     height: 4rem;
 
     display: grid;
-    grid-template-columns: 18rem 2fr 2fr 1fr;
+    grid-template-columns: 18rem 3fr 2fr 12rem;
 
     background-color: #eb5959;
     background-image: url('https://www.transparenttextures.com/patterns/arches.png');
@@ -16,7 +16,6 @@
     grid-template-columns: 4rem 8rem 6rem;
 
     text-decoration: none;
-
     color: white;
 }
 #site-title > * {
@@ -29,7 +28,6 @@
 #site-title h1 {
     font-size: 2.75rem;
     font-family: 'Caveat Brush', sans-serif;
-
 }
 #site-title h2 {
     font-style: italic;
@@ -42,7 +40,7 @@
 #site-title #img-shadow {
     background-image: radial-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 70%, transparent 100%);
     border-radius: 50%;
-    padding: 0.5rem;
+    padding: 0.55rem;
 }
 #img-shadow img {
     max-height: 100%;
@@ -51,10 +49,31 @@
     animation: 4s spin linear infinite;
     border: 2px solid black;
 }
+#site-nav ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+#site-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.65rem;
+    font-family: 'Nanum Brush Script', sans-serif;
+    font-weight: bold;
+}
+#site-nav ul li a:hover {
+    color: #d1d1d1;
+}
 
 
 
-#site-header nav {
+
+/* #site-header nav {
     width: 15rem;
     height: 25%;
     text-align: center;
@@ -75,7 +94,7 @@
 }
 #site-header nav a:hover {
     background-color: rgba(240, 00, 50, 0.2);
-}
+} */
 @keyframes spin {
     from { transform: rotateY(91deg) }
     to { transform: rotateY(-89deg) }

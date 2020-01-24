@@ -2,8 +2,10 @@
 <html>
 <head>
     <title>Mario's Specialty Foods</title>
+    <%= favicon_link_tag 'm.png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,9 +21,16 @@
             <h1>Mario's</h1>
             <h2>Specialty Cuisine</h2>
         </a>
-        <nav>
-            <%= link_to 'View Products', products_path %>
+        <nav id='site-nav'>
+            <ul>
+                <li><%= link_to 'About', products_path %></li>
+                <li><%= link_to 'Products', products_path %></li>
+            </ul>
         </nav>
+        <form>
+        </form>
+        <div>
+        </div>
     </header>
 
     <% unless (flash[:notice].nil? && flash[:alert].nil?) %>
