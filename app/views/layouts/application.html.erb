@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mario's Specialty Foods</title>
+    <title>Mario's</title>
     <%= favicon_link_tag 'm.png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -27,11 +27,37 @@
                 <li><%= link_to 'Products', products_path %></li>
             </ul>
         </nav>
-        <form>
+        <form id='site-search'>
+            <label for='search'>Search</label>
+            <div>
+                <input type='text' name='search' id='search'>
+                <button type='submit'></button>
+            </div>
         </form>
-        <div>
+        <% if current_user %>
+        <div id='site-userbar'>
+            <a href='/<%= current_user.username %>'>
+                <%=
+                image_tag ((current_user.profile_picture.nil?) ?
+                'default.jpg' :
+                current_user.profile_picture
+                ), alt: 'Your Profile Picture'
+                %>
+                <p><%= current_user.username %></p>
+            </a>
+            <p>
+                <%= link_to 'Sign out', '/signout' %>
+            </p>
         </div>
+        <% else %>
+        <div id='site-loginbar'>
+            <p><%= link_to 'Sign in', '/signin' %></p>
+            <p><%= link_to 'Register', '/register' %></p>
+        </div>
+        <% end %>
     </header>
+
+
 
     <% unless (flash[:notice].nil? && flash[:alert].nil?) %>
     <div id='flash'>
@@ -43,6 +69,8 @@
         <% end %>
     </div>
     <% end %>
+
+
 
     <main>
         <%= yield %>

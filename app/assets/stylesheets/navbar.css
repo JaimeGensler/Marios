@@ -5,7 +5,7 @@
     height: 4rem;
 
     display: grid;
-    grid-template-columns: 18rem 3fr 2fr 12rem;
+    grid-template-columns: 18rem 3fr 2fr 14rem;
 
     background-color: #eb5959;
     background-image: url('https://www.transparenttextures.com/patterns/arches.png');
@@ -25,18 +25,6 @@
     text-align: center;
 }
 
-#site-title h1 {
-    font-size: 2.75rem;
-    font-family: 'Caveat Brush', sans-serif;
-}
-#site-title h2 {
-    font-style: italic;
-    font-size: 1.75rem;
-    line-height: 1.5rem;
-    font-family: 'Nanum Brush Script', sans-serif;
-}
-
-
 #site-title #img-shadow {
     background-image: radial-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 70%, transparent 100%);
     border-radius: 50%;
@@ -49,6 +37,17 @@
     animation: 4s spin linear infinite;
     border: 2px solid black;
 }
+#site-title h1 {
+    font-size: 2.75rem;
+    font-family: 'Caveat Brush', sans-serif;
+}
+#site-title h2 {
+    font-style: italic;
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+    font-family: 'Nanum Brush Script', sans-serif;
+}
+
 #site-nav ul {
     width: 100%;
     height: 100%;
@@ -62,12 +61,71 @@
 #site-nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.65rem;
+    font-size: 1.75rem;
     font-family: 'Nanum Brush Script', sans-serif;
     font-weight: bold;
 }
 #site-nav ul li a:hover {
     color: #d1d1d1;
+}
+
+
+#site-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#site-search label {
+    color: white;
+    font-family: 'Nanum Brush Script', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-right: 1rem;
+}
+#site-search div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#site-search input {
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 100%;
+
+    text-indent: 0.5rem;
+
+    border: 1px solid black;
+    border-right: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+#site-search button {
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1px;
+
+    background: url('search.png');
+    background-size: 1rem 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+#site-search input:focus {
+    outline: none;
+    box-shadow: -3px 0 5px 3px rgba(255,255,255,.5);
+}
+#site-search input:focus ~ button {
+    box-shadow: 3px 0 5px 3px rgba(255,255,255,.5);
+}
+#site-search button:focus {
+    outline: none;
+    background-color: #aeebae;
 }
 
 

@@ -145,7 +145,7 @@ main {
 form label {
     font-size: 2rem;
 }
-form div {
+main form div {
     width: 80%;
     margin: 1rem auto;
     padding: 0.5rem;
