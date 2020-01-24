@@ -1,15 +1,23 @@
+body {
+    height: 100%;
+    overflow: auto;
+}
 #site-header {
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     height: 4rem;
 
+    padding: 0 1rem;
+    box-sizing: border-box;
+
     display: grid;
-    grid-template-columns: 18rem 3fr 2fr 14rem;
+    grid-template-columns: 18rem 3fr 2fr 12rem;
 
     background-color: #eb5959;
     background-image: url('https://www.transparenttextures.com/patterns/arches.png');
     border-bottom: 3px solid black;
+    font-family: 'Nanum Brush Script', sans-serif;
 }
 #site-title {
     display: grid;
@@ -62,7 +70,6 @@
     color: white;
     text-decoration: none;
     font-size: 1.75rem;
-    font-family: 'Nanum Brush Script', sans-serif;
     font-weight: bold;
 }
 #site-nav ul li a:hover {
@@ -77,7 +84,6 @@
 }
 #site-search label {
     color: white;
-    font-family: 'Nanum Brush Script', sans-serif;
     font-weight: bold;
     font-size: 1.75rem;
     margin-right: 1rem;
@@ -98,6 +104,9 @@
     border-right: none;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+
+    font-family: serif;
+    font-size: 0.8rem;
 }
 #site-search button {
     box-sizing: border-box;
@@ -127,34 +136,24 @@
     outline: none;
     background-color: #aeebae;
 }
-
-
-
-
-/* #site-header nav {
-    width: 15rem;
-    height: 25%;
-    text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    border-bottom: 0;
-
+#site-loginbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-#site-header nav a {
-    width: 100%;
-    height: 100%;
-    color: black;
-    text-decoration: none;
-    line-height: 1.5rem;
+#site-loginbar a {
+    font-family: 'Nanum Brush Script', sans-serif;
+    color: white;
+    font-size: 1.2rem;
 }
-#site-header nav a:hover {
-    background-color: rgba(240, 00, 50, 0.2);
-} */
+#site-loginbar a:hover {
+    color: #d1d1d1;
+}
+
+
+
+
 @keyframes spin {
     from { transform: rotateY(91deg) }
     to { transform: rotateY(-89deg) }
 }
-/* END */
