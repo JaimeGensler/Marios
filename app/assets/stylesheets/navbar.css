@@ -150,9 +150,6 @@ body {
     color: #d1d1d1;
 }
 
-
-
-
 @keyframes spin {
     from { transform: rotateY(91deg) }
     to { transform: rotateY(-89deg) }

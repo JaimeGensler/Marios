@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mario's</title>
+    <title>Mario's - <%= @info[:title] %></title>
     <%= favicon_link_tag 'm.png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    @info[:css], media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Nanum+Brush+Script&display=swap" rel="stylesheet">
