@@ -1,7 +1,3 @@
-body {
-    height: 100%;
-    overflow: auto;
-}
 #site-header {
     position: fixed;
     width: 100%;
@@ -19,6 +15,7 @@ body {
     border-bottom: 3px solid black;
     font-family: 'Nanum Brush Script', sans-serif;
 }
+
 #site-title {
     display: grid;
     grid-template-columns: 4rem 8rem 6rem;
@@ -32,8 +29,7 @@ body {
     justify-content: center;
     text-align: center;
 }
-
-#site-title #img-shadow {
+#img-shadow {
     background-image: radial-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 70%, transparent 100%);
     border-radius: 50%;
     padding: 0.55rem;
@@ -51,10 +47,12 @@ body {
 }
 #site-title h2 {
     font-style: italic;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.5rem;
     font-family: 'Nanum Brush Script', sans-serif;
+    font-family: 'Caveat Brush', sans-serif;
 }
+
 
 #site-nav ul {
     width: 100%;
@@ -136,6 +134,7 @@ body {
     outline: none;
     background-color: #aeebae;
 }
+
 #site-loginbar {
     display: flex;
     align-items: center;

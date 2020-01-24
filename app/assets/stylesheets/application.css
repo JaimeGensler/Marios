@@ -1,7 +1,13 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -16,6 +22,8 @@ p {
 
 /* Sign-in */
 main {
+    margin: 4rem 0 0 0;
+    flex-grow: 1;
     background-color: #f0f0f0;
     background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
@@ -74,11 +82,6 @@ main {
 
 
 /* MAIN */
-main {
-    width: 75%;
-    height: 100%;
-    margin: 1rem auto;
-}
 .red-white {
     font-size: 1.5rem;
     background-color: rgb(240, 00, 50);
