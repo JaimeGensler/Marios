@@ -35,7 +35,8 @@ describe Product do
         end
         it '.most_reviews should return the 3 most recently added products' do
             p1 = Product.create!(name: 'Nduja', cost: 5.00, country_of_origin: 'Italy')
-            p1.reviews.create!(author: 'Jaime', content_body: "#{'a' * 50}", rating: 5)
+            user = User.create!(username: 'J', email:'j@gmail.com', password: 'password')
+            p1.reviews.create!(user_id: user.id, content_body: "#{'a' * 50}", rating: 5)
             p2 = Product.create!(name: 'Kimchi', cost: 5.00, country_of_origin: 'Japan')
             expect(Product.most_reviews).to eq p1
         end

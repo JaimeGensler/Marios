@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+    has_many :reviews, dependent: :destroy
+    
     attr_accessor :password
 
     validates_confirmation_of :password
