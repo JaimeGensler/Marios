@@ -5,15 +5,19 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Nanum+Brush+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id='site-header'>
-        <a href='/' id='title'>
+        <a href='/' id='site-title'>
             <div id='img-shadow'>
                 <%= image_tag 'm.png', alt: 'M' %>
             </div>
-            <h1>Mario's Specialty Foods</h1>
+            <h1>Mario's</h1>
+            <h2>Specialty Cuisine</h2>
         </a>
         <nav>
             <%= link_to 'View Products', products_path %>

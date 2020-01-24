@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    top: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -12,84 +13,6 @@ p {
     padding: 0;
     font-family: serif;
 }
-
-
-/* HEADER */
-#site-header {
-    width: 100%;
-    height: 15vh;
-
-    border-bottom: 3px solid black;
-    padding-top: 0.5rem;
-    background-color: #f7f7f7;
-
-    background-color: rgb(240, 00, 50);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#title {
-    width: 100%;
-    height: 75%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-decoration: none;
-}
-#title #img-shadow {
-    height: 100%;
-    width: 5rem;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 70%, transparent 100%);
-    border-radius: 50%;
-    margin-right: 1rem;
-}
-#img-shadow img {
-    display: block;
-    height: 75%;
-    margin-right: 1rem;
-    background-color: white;
-    border-radius: 50%;
-    padding: 0.5rem;
-    animation: 4s spin linear infinite;
-    border: 2px solid black;
-}
-#title h1 {
-    display: inline-block;
-    color: white;
-    font-size: 3rem;
-}
-#site-header nav {
-    width: 15rem;
-    height: 25%;
-    text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    border-bottom: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#site-header nav a {
-    width: 100%;
-    height: 100%;
-    color: black;
-    text-decoration: none;
-    line-height: 1.5rem;
-}
-#site-header nav a:hover {
-    background-color: rgba(240, 00, 50, 0.2);
-}
-@keyframes spin {
-    from { transform: rotateY(91deg) }
-    to { transform: rotateY(-89deg) }
-}
-/* END */
-
 
 /* FLASH */
 #flash {
