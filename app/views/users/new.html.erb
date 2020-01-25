@@ -1,5 +1,5 @@
 <div id='new-user'>
-    <h2>New User Registration</h2>
+    <h2>Register</h2>
     <%= form_for @user do |f| %>
         <%= f.label 'Username: '%>
         <%= f.text_field :email %>
@@ -9,7 +9,7 @@
         <%= f.password_field :password %>
         <%= f.label :password_confirmation, 'Confirm Password:' %>
         <%= f.password_field :password_confirmation %>
-        <%= button_tag 'Register Now!'%>
+        <%= button_tag 'Sign me up!'%>
     <% end %>
     <p>Already have an account? Sign in <%= link_to 'here', new_session_path %>!</p>
 </div>

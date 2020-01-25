@@ -35,14 +35,21 @@
     width: 10rem;
     font-family: 'ZCOOL XiaoWei', serif;
     font-size: 1.25rem;
+    line-height: 1.25rem;
     padding: 0.25rem;
 
     background: none;
     background-color: white;
     border-radius: 1.5rem;
+    border: 1px solid #eb5959;
+    color: #eb5959;
+    cursor: pointer;
 }
 #new-user button:hover {
-
+    background-color: #eb5959;
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 5px 2px #eb5959;
 }
 
 #new-user p {
