@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mario's - <%= @info[:title] %></title>
+    <title>Mario's<%= defined?(@info) ? " - #{@info[:title]}" : '' %></title>
     <%= favicon_link_tag 'm.png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <% if defined?(@info) %>
     <%= stylesheet_link_tag    @info[:css], media: 'all', 'data-turbolinks-track': 'reload' %>
+    <% end %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Marcellus|Nanum+Brush+Script|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
