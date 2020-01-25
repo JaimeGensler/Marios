@@ -1,12 +1,15 @@
-<h2>Register</h2>
+<div id='new-user'>
+    <h2>New User Registration</h2>
     <%= form_for @user do |f| %>
-    <%= f.label 'Username: '%>
-    <%= f.text_field :email %>
-    <%= f.label "Email: " %>
-    <%= f.text_field :email %>
-    <%= f.label "Password: " %>
-    <%= f.password_field :password %>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-    <%= f.submit "Sign Up" %>
-<% end %>
+        <%= f.label 'Username: '%>
+        <%= f.text_field :email %>
+        <%= f.label "Email: " %>
+        <%= f.text_field :email %>
+        <%= f.label "Password: " %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, 'Confirm Password:' %>
+        <%= f.password_field :password_confirmation %>
+        <%= button_tag 'Register Now!'%>
+    <% end %>
+    <p>Already have an account? Sign in <%= link_to 'here', new_session_path %>!</p>
+</div>
