@@ -1,6 +1,6 @@
 class User < ApplicationRecord
     has_many :reviews, dependent: :destroy
-    
+
     attr_accessor :password
 
     validates_confirmation_of :password
@@ -8,6 +8,10 @@ class User < ApplicationRecord
     validates :email, :presence => true, :uniqueness => true
 
     before_save :encrypt_password
+
+
+    scope :random, -> { offset(rand(User.count)).first }
+
 
     def encrypt_password
         self.password_salt = BCrypt::Engine.generate_salt
