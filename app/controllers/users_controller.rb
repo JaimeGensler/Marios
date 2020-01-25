@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
     def new
-        @info = {title: 'Register', css: 'user.css'}
+        @info = {title: 'Register', css: 'form.css'}
         @user = User.new
     end
 

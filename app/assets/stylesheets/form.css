@@ -1,4 +1,4 @@
-#new-user {
+.main-form {
     width: 30rem;
     padding: 2rem;
     margin: 5rem auto;
@@ -9,27 +9,27 @@
     border: 2px solid black;
     border-radius: 2px;
 }
-#new-user h2 {
+.main-form h2 {
     font-size: 2.25rem;
     font-family: 'Marcellus', serif;
 }
-#new-user form {
+.main-form form {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
 }
-#new-user label {
+.main-form label {
     font-size: 1.5rem;
     font-family: 'ZCOOL XiaoWei', serif;
 }
-#new-user input {
+.main-form input {
     border: 1px solid #454545;
     border-radius: 5px;
 }
 
-#new-user button {
+.main-form button {
     grid-column: 1 / 3;
     margin: 0 auto;
     width: 10rem;
@@ -45,20 +45,20 @@
     color: #eb5959;
     cursor: pointer;
 }
-#new-user button:hover {
+.main-form button:hover {
     background-color: #eb5959;
     color: white;
     border-color: white;
     box-shadow: 0 0 5px 2px #eb5959;
 }
 
-#new-user p {
+.main-form p {
     margin-top: 2rem;
     font-style: italic;
 }
-#new-user p a {
+.main-form p a {
     text-decoration: none;
 }
-#new-user p a:hover {
+.main-form p a:hover {
     text-decoration: underline;
 }
