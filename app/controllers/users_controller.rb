@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
     def new
-        @info = {title: 'Register', css: 'form.css'}
         @user = User.new
     end
 
@@ -14,10 +13,6 @@ class UsersController < ApplicationController
             flash[:alert] = "There was a problem signing up."
             redirect_to '/signup'
         end
-    end
-
-    def self.my_test_method
-        'Jaime rocks'
     end
 
     private

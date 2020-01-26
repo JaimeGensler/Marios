@@ -1,0 +1,23 @@
+#about-photo {
+    width: 100%;
+    height: 25rem;
+}
+#about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about-body {
+    width: 75%;
+    margin: 1rem auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+
+}

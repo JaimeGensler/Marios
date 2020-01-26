@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
     def new
-        @info = {title: 'Register', css: 'form.css'}
         render :new
     end
     def create
@@ -17,7 +16,7 @@ class SessionsController < ApplicationController
     end
 
     def destroy
-        flash[:notice] = "Come back soon, #{@user.username}!"
+        flash[:notice] = "Come back soon, #{current_user.username}!"
         session[:user_id] = nil
         redirect_to '/'
     end
