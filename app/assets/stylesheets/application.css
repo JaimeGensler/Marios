@@ -20,14 +20,21 @@ p {
     font-family: serif;
 }
 
-/* Sign-in */
 main {
     margin: 4rem 0 0 0;
     flex-grow: 1;
     background-color: #f0f0f0;
     background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
-/* END */
+
+.section-header {
+    padding: 0.75rem;
+    font-size: 3rem;
+    text-align: center;
+
+    color: #eb5959;
+    text-shadow: -1px -1px black, -1px 1px black, 1px -1px black, 1px 1px black;
+}
 
 /* FLASH */
 #flash {
@@ -112,7 +119,7 @@ main {
     grid-column-gap: 2rem;
     padding: 0 2rem;
 }
-.card {
+/* .card {
     border-radius: 5rem;
     border: 3px solid black;
     padding: 1rem;
@@ -124,7 +131,7 @@ main {
 .card h2 {
     margin-bottom: 1rem;
     color: rgb(240, 00, 50);
-}
+} */
 .item {
     width: 75%;
     display: flex;

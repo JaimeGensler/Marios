@@ -57,26 +57,24 @@
             <%= link_to 'Sign in', new_session_path %>
             <%= link_to 'Register', new_user_path %>
         </div>
+
         <% end %>
 
     </header>
 
 
-
-    <% unless (flash[:notice].nil? && flash[:alert].nil?) %>
-    <div id='flash'>
-        <% unless flash[:notice].nil? %>
-        <p id='notice'><%= flash[:notice] %></p>
-        <% end %>
-        <% unless flash[:alert].nil? %>
-        <p id='alert'><%= flash[:alert] %></p>
-        <% end %>
-    </div>
-    <% end %>
-
-
-
     <main>
+        <% unless (flash[:notice].nil? && flash[:alert].nil?) %>
+        <div id='flash'>
+            <% unless flash[:notice].nil? %>
+            <p id='notice'><%= flash[:notice] %></p>
+            <% end %>
+            <% unless flash[:alert].nil? %>
+            <p id='alert'><%= flash[:alert] %></p>
+            <% end %>
+        </div>
+        <% end %>
+        
         <%= yield %>
     </main>
 </body>

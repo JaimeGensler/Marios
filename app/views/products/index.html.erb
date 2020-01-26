@@ -1,15 +1,21 @@
-<div id='list' class='container'>
-    <h2 class='red-white'>Products</h2>
-    <p><%= link_to 'Create new product', new_product_path, class: 'new' %></p>
+<%= stylesheet_link_tag 'products', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<div id='products'>
+        <h2 class='section-header'>Mario's Products</h2>
+        <% if current_user && current_user.admin %>
+        <p class='new-product'><%= link_to 'Create new product', new_product_path, class: 'new' %></p>
+        <% end %>
 
     <% if @products.any? %>
-    <ul>
+    <div id='products-list'>
         <% @products.each do |product| %>
-        <li>
-            <%= link_to product.name, product_path(product) %>
-        </li>
+            <a class='product' href='<%= product_path(product) %>'>
+                <h3><%= product.name %></h3>
+                <p><%= product.description  %></p>
+                <p><%= product.cost %></p>
+            </a>
         <% end %>
-    </ul>
+    </div>
     <% else %>
     <p>There are no products yet.</p>
     <% end %>
