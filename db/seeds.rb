@@ -15,8 +15,11 @@ bojack = Faker::TvShows::BojackHorseman
 end
 
 50.times do |i|
+    name = Faker::Food.dish
     Product.create!(
-        name: Faker::Food.ingredient,
+        name: name,
+        description: Faker::Food.description,
+        picture: Faker::LoremFlickr.colorized_image(search_terms: [name]),
         cost: Faker::Number.decimal(l_digits: 2, r_digits: 2),
         country_of_origin: Faker::Address.country
     )
