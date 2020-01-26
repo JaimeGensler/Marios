@@ -27,6 +27,9 @@
 .main-form input {
     border: 1px solid #454545;
     border-radius: 5px;
+    text-indent: 0.25rem;
+    font-family: serif;
+    font-size: 0.75rem;
 }
 
 .main-form button {

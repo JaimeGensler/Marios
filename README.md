@@ -6,7 +6,7 @@
 
 
 ## Description
-_Mario's Specialty Foods allows the user to create new food products and reviews for those products. Both products and reviews have full CRUD functionality._
+_Mario's Specialty Cuisine allows only admins to create new food products and reviews for those products. Both products and reviews have full CRUD functionality._
 
 | SPEC                           | EXAMPLE INPUT               | EXAMPLE OUTPUT             |
 |--------------------------------|-----------------------------|----------------------------|

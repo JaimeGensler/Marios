@@ -15,6 +15,9 @@
     border-bottom: 3px solid black;
     font-family: 'Nanum Brush Script', sans-serif;
 }
+#site-header *:focus {
+    outline-color: white;
+}
 
 #site-title {
     display: grid;
@@ -32,7 +35,7 @@
 #img-shadow {
     background-image: radial-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 70%, transparent 100%);
     border-radius: 50%;
-    padding: 0.55rem;
+    padding: 0.5rem;
 }
 #img-shadow img {
     max-height: 100%;
@@ -58,10 +61,14 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+#site-nav ul li {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
+    justify-content: center;
 }
 #site-nav ul li a {
     color: white;
@@ -69,8 +76,10 @@
     font-size: 1.75rem;
     font-weight: bold;
 }
-#site-nav ul li a:hover {
+#site-nav ul li a:hover, #site-nav ul li a:focus {
     color: #d1d1d1;
+    font-style: italic;
+    font-size: 2rem;
 }
 
 
@@ -134,17 +143,53 @@
     background-color: #aeebae;
 }
 
-#site-loginbar {
+
+#site-userbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5rem;
+    padding: 0.5rem;
+}
+#site-userbar img {
+    box-sizing: border-box;
+    max-height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    float: right;
+}
+#site-userbar div:last-child {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.25rem;
+}
+#site-userbar a {
+    font-size: 1rem;
+    color: white;
+}
+#site-userbar a:hover, #site-userbar a:focus {
+    color: #d1d1d1;
+    font-style: italic;
+}
+
+
+#site-loginbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 #site-loginbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Nanum Brush Script', sans-serif;
     color: white;
     font-size: 1.2rem;
 }
-#site-loginbar a:hover {
+#site-loginbar a:hover, #site-loginbar a:focus {
+    font-style: italic;
+    font-size: 1.5rem;
     color: #d1d1d1;
 }
 
