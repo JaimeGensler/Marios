@@ -177,6 +177,7 @@
         null,
         null,
         1,
+        1,
         1
       ],
       "/Users/Jaime/Code/marios_new/config/initializers/backtrace_silencers.rb": [
@@ -302,6 +303,9 @@
         0,
         0,
         0,
+        null,
+        null,
+        1,
         0,
         0,
         null,
@@ -416,7 +420,6 @@
         null,
         1,
         0,
-        0,
         null,
         1,
         0,
@@ -441,7 +444,6 @@
         1,
         1,
         0,
-        0,
         null,
         null,
         1,
@@ -454,10 +456,6 @@
         0,
         0,
         null,
-        null,
-        null,
-        1,
-        0,
         null,
         null,
         1,
@@ -508,7 +506,7 @@
         null,
         1,
         1,
-        14,
+        15,
         null,
         null
       ],
@@ -526,6 +524,10 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Jaime/Code/marios_new/app/models/user.rb": [
@@ -545,8 +547,8 @@
         null,
         null,
         1,
-        10,
-        10,
+        11,
+        11,
         null,
         null,
         1,
@@ -556,6 +558,7 @@
         null
       ],
       "/Users/Jaime/Code/marios_new/config/routes.rb": [
+        1,
         1,
         1,
         null,
@@ -593,6 +596,15 @@
         2,
         2,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/Jaime/Code/marios_new/spec/models/user_spec.rb": [
@@ -613,6 +625,7 @@
         2,
         null,
         null,
+        1,
         1,
         1,
         1,
@@ -644,6 +657,6 @@
         null
       ]
     },
-    "timestamp": 1579913663
+    "timestamp": 1580079734
   }
 }

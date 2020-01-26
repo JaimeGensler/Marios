@@ -11,4 +11,8 @@ class Review < ApplicationRecord
 
     validates_length_of :content_body, minimum: 50
     validates_length_of :content_body, maximum: 250
+
+    def author
+        self.user.username
+    end
 end

@@ -18,6 +18,7 @@ describe User, :model do
     context '(scopes)' do
         it '.random will return a random user' do
             srand(12345)
+            User.destroy_all
             p1 = User.create!(username: 'Jaime', email: 'test1', password: '12345')
             p2 = User.create!(username: 'Chris', email: 'test2', password: '12345')
             p3 = User.create!(username: 'Robin', email: 'test3', password: '12345')
