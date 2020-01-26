@@ -106,13 +106,6 @@ main {
     color: black;
 }
 
-#about {
-    margin-bottom: 2.5rem;
-}
-#about p {
-    font-size: 1rem;
-    text-indent: 2rem;
-}
 #cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

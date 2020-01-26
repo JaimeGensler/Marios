@@ -15,9 +15,6 @@
     border-bottom: 3px solid black;
     font-family: 'Nanum Brush Script', sans-serif;
 }
-#site-header *:focus {
-    outline-color: white;
-}
 
 #site-title {
     display: grid;
