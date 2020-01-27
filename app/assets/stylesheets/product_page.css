@@ -51,7 +51,7 @@
 }
 #reviews-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 1rem;
 }
 #reviews-list div {
@@ -64,6 +64,7 @@
     border-left: 1px solid gray;
     margin: 1rem 0 0 0;
     padding-left: 1rem;
+    overflow: scroll;
 }
 
 .new {
