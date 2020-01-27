@@ -17,7 +17,8 @@ _Mario's Specialty Cuisine allows only admins to create new food products and re
 
 ## Setup/Installation Requirements
 
-_IMPORTANT NOTICE: One admin account is created when the database is seeded. The username, email, and password for this account are all 'admin'_
+_IMPORTANT NOTICE: One admin account is created when the database is seeded. The username, email, and password for this account are all 'admin'._
+_Additionally, the 'search' bar does not have functionality at this point in time. It is purely aesthetic!_
 
 * _Clone this github repository_
 * _CD into the repository_
