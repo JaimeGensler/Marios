@@ -1,19 +1,20 @@
 <%= stylesheet_link_tag 'products', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <div id='products'>
-        <h2 class='section-header'>Mario's Products</h2>
-        <% if current_user && current_user.admin %>
-        <p class='new-product'><%= link_to 'Create new product', new_product_path, class: 'new' %></p>
-        <% end %>
+    <h2 class='section-header'>Mario's Products</h2>
+
+    <% if current_user && current_user.admin %>
+    <%= link_to 'Create new product', new_product_path, class: 'new-product' %>
+    <% end %>
 
     <% if @products.any? %>
     <div id='products-list'>
         <% @products.each do |product| %>
-            <a class='product' href='<%= product_path(product) %>'>
-                <h3><%= product.name %></h3>
-                <p><%= product.description  %></p>
-                <p><%= product.cost %></p>
-            </a>
+        <a class='product' href='<%= product_path(product) %>'>
+            <h3><%= product.name %></h3>
+            <p><%= product.description  %></p>
+            <p><%= product.cost %></p>
+        </a>
         <% end %>
     </div>
     <% else %>

@@ -48,7 +48,7 @@
     color: #eb5959;
     cursor: pointer;
 }
-.main-form button:hover {
+.main-form button:hover, .main-form button:focus {
     background-color: #eb5959;
     color: white;
     border-color: white;

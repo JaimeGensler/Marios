@@ -2,6 +2,17 @@
     width: 75%;
     margin: 0 auto;
 }
+.new-product {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+.new-product:hover, .new-product:focus {
+    text-decoration: underline;
+    font-style: italic;
+}
 #products-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
