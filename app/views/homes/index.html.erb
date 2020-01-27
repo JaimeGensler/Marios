@@ -12,10 +12,10 @@
     <div class='card'>
         <h2>Most Reviewed!</h2>
         <div class='item'>
-            <% if @top.any? %>
-            <h3><%= @top.name %></h3>
-            <p>Price: $<%= @top.cost %></p>
-            <p>From: <%= @top.country_of_origin %></p>
+            <% unless @top.nil? || !defined?(@top.cost) %>
+                <h3><%= @top.name %></h3>
+                <p>Price: $<%= @top.cost %></p>
+                <p>From: <%= @top.country_of_origin %></p>
             <% else %>
             <p>Nothing found! There don't seem to reviews?</p>
             <% end %>

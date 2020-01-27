@@ -100,4 +100,24 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+    config.before(:each) do |test|
+        User.destroy_all
+        Product.destroy_all
+        Review.destroy_all
+        if (test.metadata[:signed_in_admin])
+            User.create!(username: 'admin', email: 'admin', password: 'admin', admin: true)
+            visit '/signin'
+            fill_in 'ident', :with => 'admin'
+            fill_in 'password', :with => 'admin'
+            click_on 'Sign me in!'
+        end
+        if (test.metadata[:signed_in_user])
+            User.create!(username: 'capytest', email: 'capytest', password: 'password')
+            visit '/signin'
+            fill_in 'ident', :with => 'capytest'
+            fill_in 'password', :with => 'password'
+            click_on 'Sign me in!'
+        end
+    end
 end
