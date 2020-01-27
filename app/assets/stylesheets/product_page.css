@@ -1,0 +1,24 @@
+#product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 15rem;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+#product-details > div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#product-details div:first-of-type {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#product-details img {
+    max-height: 100%;
+    border: 1px solid black;
+}

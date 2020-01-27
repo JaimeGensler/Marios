@@ -24,6 +24,7 @@ class ProductsController < ApplicationController
 
     def show
         @product = Product.find(params[:id])
+        @image = Faker::LoremFlickr.image(search_terms: ['restaurant', 'food'])
         render :show
     end
 
