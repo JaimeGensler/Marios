@@ -15,7 +15,7 @@ class Product < ApplicationRecord
         .joins(:reviews)
         .group('products.id')
         .order('review_count DESC')
-        .take(1)
+        .limit(1)
         .first
     )}
     scope :random, -> { offset(rand(Product.count)).first }

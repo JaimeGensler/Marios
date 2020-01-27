@@ -1,33 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Jaime/Code/marios_new/spec/models/product_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+      "/Users/Guest/Desktop/Marios/spec/features/users/add_user_pages_spec.rb": [
         1,
         null,
         1,
@@ -36,32 +10,28 @@
         1,
         1,
         1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
         1,
         1,
         1,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/environment.rb": [
+      "/Users/Guest/Desktop/Marios/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Jaime/Code/marios_new/config/application.rb": [
+      "/Users/Guest/Desktop/Marios/config/application.rb": [
         1,
         null,
         1,
@@ -97,13 +67,13 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/boot.rb": [
+      "/Users/Guest/Desktop/Marios/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/Users/Jaime/Code/marios_new/config/environments/test.rb": [
+      "/Users/Guest/Desktop/Marios/config/environments/test.rb": [
         1,
         null,
         null,
@@ -151,7 +121,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/application_controller_renderer.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -161,7 +131,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/assets.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -184,7 +154,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/backtrace_silencers.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -193,7 +163,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/content_security_policy.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -220,20 +190,20 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/cookies_serializer.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/filter_parameter_logging.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/inflections.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -251,13 +221,13 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/mime_types.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/initializers/wrap_parameters.rb": [
+      "/Users/Guest/Desktop/Marios/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -273,26 +243,26 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/channels/application_cable/channel.rb": [
+      "/Users/Guest/Desktop/Marios/app/channels/application_cable/channel.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/channels/application_cable/connection.rb": [
+      "/Users/Guest/Desktop/Marios/app/channels/application_cable/connection.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/controllers/application_controller.rb": [
+      "/Users/Guest/Desktop/Marios/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null,
         1,
-        0,
-        0,
+        7,
+        3,
         null,
         null,
         null,
@@ -322,99 +292,40 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/helpers/application_helper.rb": [
+      "/Users/Guest/Desktop/Marios/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/controllers/homes_controller.rb": [
+      "/Users/Guest/Desktop/Marios/app/controllers/homes_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/Users/Jaime/Code/marios_new/app/controllers/products_controller.rb": [
-        1,
-        1,
-        0,
+        2,
+        2,
+        2,
         null,
         null,
         1,
         0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
         0,
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/controllers/reviews_controller.rb": [
+      "/Users/Guest/Desktop/Marios/app/controllers/products_controller.rb": [
         1,
         1,
         0,
         null,
+        null,
         1,
+        0,
         0,
         null,
         null,
         1,
         0,
         0,
-        0,
         null,
         1,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -433,10 +344,8 @@
         1,
         0,
         0,
-        0,
         null,
         1,
-        0,
         0,
         0,
         0,
@@ -458,7 +367,68 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/controllers/sessions_controller.rb": [
+      "/Users/Guest/Desktop/Marios/app/controllers/reviews_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/Marios/app/controllers/sessions_controller.rb": [
         1,
         null,
         1,
@@ -483,65 +453,65 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/controllers/users_controller.rb": [
+      "/Users/Guest/Desktop/Marios/app/controllers/users_controller.rb": [
         1,
         1,
-        0,
+        3,
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/Jaime/Code/marios_new/app/jobs/application_job.rb": [
-        1,
-        null
-      ],
-      "/Users/Jaime/Code/marios_new/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Jaime/Code/marios_new/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/Jaime/Code/marios_new/app/models/product.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
+        2,
         2,
         1,
-        null,
+        1,
         1,
         null,
         1,
-        null,
-        null,
+        1,
         null,
         null,
         null,
         1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/Marios/app/jobs/application_job.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/Marios/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/Marios/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/Marios/app/models/product.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        4,
+        1,
+        3,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         2,
         null,
@@ -553,7 +523,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/models/review.rb": [
+      "/Users/Guest/Desktop/Marios/app/models/review.rb": [
         1,
         1,
         1,
@@ -573,7 +543,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/app/models/user.rb": [
+      "/Users/Guest/Desktop/Marios/app/models/user.rb": [
         1,
         1,
         null,
@@ -590,8 +560,8 @@
         null,
         null,
         1,
-        11,
-        11,
+        12,
+        12,
         null,
         null,
         1,
@@ -600,7 +570,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/config/routes.rb": [
+      "/Users/Guest/Desktop/Marios/config/routes.rb": [
         1,
         1,
         1,
@@ -619,7 +589,60 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/spec/models/review_spec.rb": [
+      "/Users/Guest/Desktop/Marios/spec/models/product_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/Marios/spec/models/review_spec.rb": [
         1,
         null,
         1,
@@ -650,7 +673,7 @@
         null,
         null
       ],
-      "/Users/Jaime/Code/marios_new/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/Marios/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -700,6 +723,6 @@
         null
       ]
     },
-    "timestamp": 1580101309
+    "timestamp": 1580141068
   }
 }

@@ -12,9 +12,13 @@
     <div class='card'>
         <h2>Most Reviewed!</h2>
         <div class='item'>
+            <% if @top.any? %>
             <h3><%= @top.name %></h3>
             <p>Price: $<%= @top.cost %></p>
             <p>From: <%= @top.country_of_origin %></p>
+            <% else %>
+            <p>Nothing found! Are you sure there are any products/reviews?</p>
+            <% end %>
         </div>
     </div>
     <div class='card'>
