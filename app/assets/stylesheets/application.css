@@ -107,8 +107,10 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2rem;
     padding: 0 2rem;
+    margin-top: 3rem;
 }
-/* .card {
+.card {
+    background-color: white;
     border-radius: 5rem;
     border: 3px solid black;
     padding: 1rem;
@@ -120,7 +122,7 @@ main {
 .card h2 {
     margin-bottom: 1rem;
     color: rgb(240, 00, 50);
-} */
+}
 .item {
     width: 75%;
     display: flex;
