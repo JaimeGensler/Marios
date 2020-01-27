@@ -1,4 +1,8 @@
 class ProductsController < ApplicationController
+    before_action except: [:index, :show] do
+        authorize(:admin_auth)
+    end
+
     def index
         @products = Product.all
         render :index
