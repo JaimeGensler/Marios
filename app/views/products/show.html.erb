@@ -27,19 +27,31 @@
         </div>
     </div>
 
-    <% if @product.reviews.any? %>
-    <h4>Product Reviews:</h4>
-    <ul class='reviews'>
-        <% @product.reviews.each do |review| %>
-        <li>
-            "<%= link_to review.content_body, product_review_path(@product, review) %>" - <%= review.author %>
-        </li>
+    <div id='reviews'>
+        <h4 class='section-header'>Reviews of <%= @product.name %></h4>
+        <% if current_user %>
+            <p><%= link_to "Add your own review!", new_product_review_path(@product), class: 'new-button' %></p>
+        <% else %>
+            <p><%= link_to "Sign in to add your own review!", new_session_path, class: 'new-button' %></p>
         <% end %>
-    </ul>
-    <% else %>
-    <p>There are no reviews for this product yet!</p>
-    <% end %>
-    <p><%= link_to "Add a review", new_product_review_path(@product), class: 'new' %></p>
+
+
+        <% if @product.reviews.any? %>
+
+        <div id='reviews-list'>
+            <% @product.reviews.each do |review| %>
+            <div>
+                <p><%= review.author %> says...</p>
+                <blockquote>
+                    <%= review.content_body %>
+                </blockquote>
+            </div>
+            <% end %>
+        </div>
+        <% else %>
+        <p>There are no reviews for this product yet!</p>
+        <% end %>
+    </div>
 
 
 

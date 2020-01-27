@@ -4,7 +4,7 @@
     <h2 class='section-header'>Mario's Products</h2>
 
     <% if current_user && current_user.admin %>
-    <%= link_to 'Create new product', new_product_path, class: 'new-product' %>
+    <%= link_to 'Create new product', new_product_path, class: 'new-button' %>
     <% end %>
 
     <% if @products.any? %>

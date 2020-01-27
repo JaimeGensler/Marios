@@ -5,6 +5,7 @@
     height: 15rem;
     background-color: white;
     border-bottom: 2px solid black;
+    padding: 0 15%;
 }
 
 #product-details > div:nth-of-type(2) {
@@ -21,4 +22,50 @@
 #product-details img {
     max-height: 100%;
     border: 1px solid black;
+}
+
+.edit-delete {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.edit-delete > * {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}
+.edit {
+    background-color: rgba(100, 200, 0, 0.5);
+}
+.delete {
+    background-color: rgba(250, 50, 0, 0.5);
+}
+.edit a, .delete a{
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+#reviews {
+    width: 80%;
+    margin: 1rem auto;
+}
+#reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+#reviews-list div {
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid black;
+}
+#reviews-list div blockquote {
+    font-style: italic;
+    border-left: 1px solid gray;
+    margin: 1rem 0 0 0;
+    padding-left: 1rem;
+}
+
+.new {
+    text-align: center;
 }

@@ -87,22 +87,21 @@ main {
 /* END */
 
 
+.new-button {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+.new-button:hover, .new-button:focus {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
 
 /* MAIN */
-.container {
-    padding: 2rem;
-    border-radius: 5rem;
-    border: 3px solid black;
-}
-.new {
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: dimgrey;
-}
-.new:hover {
-    color: black;
-}
-
 #cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -150,41 +149,6 @@ main form div {
     margin: 1rem auto;
     padding: 0.5rem;
     border: 1px solid gray;
-}
-.edit-delete {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
-}
-.edit {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(100, 200, 0, 0.5);
-    text-align: center;
-}
-.delete {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(250, 50, 0, 0.5);
-    text-align: center;
-}
-.edit a {
-    width: 100%;
-    height: 100%;
-    display: block;
-
-    color: black;
-    font-size: 1.25rem;
-    text-decoration: none;
-}
-.delete a {
-    width: 100%;
-    height: 100%;
-    display: block;
-
-    color: black;
-    font-size: 1.25rem;
-    text-decoration: none;
 }
 
 .reviews {
