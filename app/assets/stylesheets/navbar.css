@@ -158,10 +158,11 @@
     justify-content: center;
     flex-direction: column;
     color: white;
-    font-size: 1.25rem;
+    font-size: 0.9rem;
+    overflow: auto;
 }
 #site-userbar a {
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: white;
 }
 #site-userbar a:hover, #site-userbar a:focus {

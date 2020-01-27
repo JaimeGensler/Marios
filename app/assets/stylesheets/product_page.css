@@ -70,3 +70,8 @@
 .new {
     text-align: center;
 }
+
+#product-page > p:last-of-type {
+    padding-bottom: 3rem;
+    text-align: center;
+}

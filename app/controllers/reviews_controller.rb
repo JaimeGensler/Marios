@@ -1,4 +1,11 @@
 class ReviewsController < ApplicationController
+    before_action only: [:new, :create] do
+        authorize(:user_auth)
+    end
+    before_action except: [:new, :create] do
+        authorize(:admin_auth)
+    end
+
     def new
         @product = Product.find(params[:product_id])
         @review = @product.reviews.new
