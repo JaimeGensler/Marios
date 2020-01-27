@@ -16,7 +16,7 @@ end
     Product.create!(
         name: name,
         description: Faker::Food.description,
-        picture: Faker::LoremFlickr.colorized_image(search_terms: [name]),
+        picture: Faker::LoremFlickr.image(search_terms: [name]),
         cost: Faker::Number.decimal(l_digits: 2, r_digits: 2),
         country_of_origin: Faker::Address.country
     )
