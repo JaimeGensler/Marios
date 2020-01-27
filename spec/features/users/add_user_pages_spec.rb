@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe "the register user process" do
-    it "adds a new user" do
+describe 'The register user process' do
+    it 'adds a new user' do
         visit '/'
         click_link 'Register'
         fill_in 'user[username]', :with => 'CapyTest'
@@ -13,7 +13,7 @@ describe "the register user process" do
         expect(page).to have_content 'CapyTest'
     end
 
-    it "gives error when no params are entered" do
+    it 'returns an error when no user details are entered' do
         visit '/register'
         click_on 'Sign me up!'
         expect(page).to have_content 'There was a problem signing up.'
